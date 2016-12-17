@@ -1,0 +1,18 @@
+{
+  "name": "rabbit-queue",
+  "version": "1.0.0",
+  "description": "This example uses RabbitMQ queue as a source for messages. In this case the Node.js app itself does\r never cache more than preset amount of messages (for this example the limit is 10 messages) which allows you to send even millions of messages in the fastest way without worrying that your app would run out of memory. You also wouldn't loose messages, if sender crashes then RabbitMQ requeues unacked messages.",
+  "main": "pusher.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqp": "^0.2.6",
+    "crypto": "0.0.3",
+    "nodemailer": "^2.7.0",
+    "smtp-server": "^1.17.0"
+  }
+}
